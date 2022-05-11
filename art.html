@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <div class="dropdown">
+          <button class="dropbtn" href="portfoliointro.html">Portfolio</button>
+          <div class="dropdown-content">
+            <a href="programming.html">Programming</a>
+            <a href="writing.html">English</a>
+            <a href="art.html">Art</a>
+          </div>
+        </div> 
+        <a href="contact.html">Contact</a>
+        <button id="bgButton" onclick="playVid()">Pause</button>
+      </div>
+    <video src="background.mp4" id="bg" muted loop autoplay></video>
+    <div class="overlay"></div>
     
+
+    <footer>
+        <section>
+            <p>Site Map</p>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="portfoliointro.html">Portfolio</a>
+            <a href="programming.html">Programming</a>
+            <a href="writing.html">English</a>
+            <a href="art.html">Art</a>
+            <a href="contact.html">Contact</a>
+        </section>
+        <section>
+            <p>Credits:<br><br>@ Daniel Hill, 2022</p>
+        </section>
+    </footer>
 </body>
 </html>
