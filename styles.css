@@ -1,9 +1,24 @@
+@font-face {
+  font-family: space;
+  src: url(font/SpaceMission-rgyw9.otf);
+}
+@font-face {
+  font-family: konexy;
+  src: url(font/KonexyPersonalUse-rg3wK.otf);
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
 } 
+html {
+  position: relative;
+  min-height: 100vh;
+}
+a {
+  font-family: konexy;
+}
 video {
     position: fixed;
     right: 0;
@@ -27,7 +42,8 @@ video {
 }
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
+    width: 100vw;
   }
   
   .navbar a {
@@ -37,6 +53,7 @@ video {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: space;
   }
   
   .dropdown {
@@ -53,6 +70,7 @@ video {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    font-family: space;
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
@@ -86,13 +104,25 @@ video {
   }
   p {
       color: white;
+      font-family: konexy;
   }
   footer {
+    width: 100vw;
+    height: 20vh;    
     display: flex;
     flex-direction: row;
-    background-color: #333;
+    background-color: black;
     justify-content: space-around;
     padding: 10px;
+    position: absolute;
+    bottom: 0;
+    
+  }
+  footer a {
+    color: slategray;
+  }
+  footer a:hover {
+    color: purple;
   }
   .card {
     display: flex;
@@ -102,12 +132,14 @@ video {
   .btn {
     padding: 20px;
     margin: 20px;
-    background-color: #333;
+    background-color: black;
     text-decoration: none;
     color: white;
     border-radius: 5px;
     width: 200px;
     text-align: center;
+    font-family: space;
+    font-size: 20px;
   }
   .btn:hover {
     background-color: red;
@@ -117,6 +149,10 @@ video {
   }
   h1, h2, h3, h4, h5, h6{
     color: white;
+    font-family: space;
+    padding: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
   }
   .summaryBox {
     display: flex;
@@ -128,8 +164,70 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20vh;
   }
 .textBox {
   display: flex;
   flex-direction: column;
+}
+.carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slide {
+  display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.carrotsellText {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.mainTitle {
+  padding-top: 35vh;
+  font-size: 100px;
+  font-family: space;
+}
+.title {
+  padding: 100px;
+  font-size: 100px;
+  font-family: space;
+}
+p {
+  width: 50vw;
 }
