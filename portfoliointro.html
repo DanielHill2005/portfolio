@@ -22,21 +22,22 @@
           </div>
         </div> 
         <a href="contact.html">Contact</a>
-        <button id="bgButton" onclick="playVid()">Pause</button>
       </div>
     <video src="background.mp4" id="bg" muted loop autoplay></video>
     <h2>My work</h2>
-    <section class="card">
-      <p>Programming</p>
-      <a href="programming.html" class="btn">Programming</a>
-    </section>
-    <section class="card">
-      <p>English</p>
-      <a href="writing.html" class="btn">English</a>
-    </section>
-    <section class="card">
-      <p>Art</p>
-      <a href="art.html" class="btn">Art</a>
+    <section class="cardRow">
+      <section class="card">
+        <p>Programming</p>
+        <a href="programming.html" class="btn">Programming</a>
+      </section>
+      <section class="card">
+        <p>English</p>
+        <a href="writing.html" class="btn">English</a>
+      </section>
+      <section class="card">
+        <p>Art</p>
+        <a href="art.html" class="btn">Art</a>
+      </section>
     </section>
   </body>
   <footer>
@@ -54,5 +55,6 @@
       <section>
           <p>Credits:<br><br>Background video: Free Video Background loops<br><br>@ Daniel Hill, 2022</p>
       </section>
+      <button id="bgButton" class="jsButton" onclick="playVid()">Pause</button>
   </footer>
   </html>

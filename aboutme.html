@@ -22,22 +22,18 @@
           </div>
         </div> 
         <a href="contact.html">Contact</a>
-        <button id="bgButton" onclick="playVid()">Pause</button>
       </div>
     <video src="background.mp4" id="bg" muted loop autoplay></video>
     <h2>Find out more about me</h2>
-    <section class="textBox">
-        <p>Awards and Achievements</p>
-        <button onclick="">Read More</button>        
-    </section>        
-    <section class="textBox">
-        <p>Hobbies</p>        
-        <button onclick="">Read More</button>        
-    </section>        
-    <section class="textBox">
-        <p>Post Secondary Plan</p>        
-        <button onclick="">Read More</button>        
-    </section>    
+    <p>Awards and Achievements</p>     
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum atque sunt et aspernatur sequi possimus<span id="dots1">...</span><span id="more1"> eveniet voluptas quo dolore quisquam dolorem sed nihil, aperiam optio dolores. Reprehenderit vel voluptates error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae dolor cum, doloremque, inventore voluptatum eius vitae laudantium excepturi necessitatibus magni, voluptatibus sit officia temporibus ad a? Dolor, est id!</span></p>
+    <button class="jsButton" id='moreBtn1' onclick="moreLess(1)">Read More</button> 
+    <p>Hobbies</p>          
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum atque sunt et aspernatur sequi possimus<span id="dots2">...</span><span id="more2"> eveniet voluptas quo dolore quisquam dolorem sed nihil, aperiam optio dolores. Reprehenderit vel voluptates error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae dolor cum, doloremque, inventore voluptatum eius vitae laudantium excepturi necessitatibus magni, voluptatibus sit officia temporibus ad a? Dolor, est id!</span></p> 
+    <button class="jsButton" id='moreBtn2' onclick="moreLess(2)">Read More</button>      
+    <p>Post Secondary Plan</p>           
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum atque sunt et aspernatur sequi possimus<span id="dots3">...</span><span id="more3"> eveniet voluptas quo dolore quisquam dolorem sed nihil, aperiam optio dolores. Reprehenderit vel voluptates error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum beatae dolor cum, doloremque, inventore voluptatum eius vitae laudantium excepturi necessitatibus magni, voluptatibus sit officia temporibus ad a? Dolor, est id!</span></p>
+    <button class="jsButton" id='moreBtn3' onclick="moreLess(3)">Read More</button> 
 </body>
 <footer>
     <section class="card">
@@ -54,5 +50,6 @@
     <section>
         <p>Credits:<br><br>Background video: Free Video Background loops<br><br>@ Daniel Hill, 2022</p>
     </section>
+    <button id="bgButton" class="jsButton" onclick="playVid()">Pause</button>
 </footer>
 </html>

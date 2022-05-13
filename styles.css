@@ -113,7 +113,7 @@ video {
     flex-direction: row;
     background-color: black;
     justify-content: space-around;
-    padding: 10px;
+    padding-top: 10px;
     position: absolute;
     bottom: 0;
     
@@ -158,7 +158,6 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vw;
   }
   body {
     display: flex;
@@ -166,10 +165,6 @@ video {
     align-items: center;
     padding-bottom: 20vh;
   }
-.textBox {
-  display: flex;
-  flex-direction: column;
-}
 .carousel {
   max-width: 1000px;
   position: relative;
@@ -228,6 +223,24 @@ video {
   font-size: 100px;
   font-family: space;
 }
-p {
-  width: 50vw;
+.jsButton {
+  min-width: 5vw;
+  height: 3vh;
+  background-color: white;
+  border-radius: 50px;
+  font-family: konexy;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+.jsButton:hover {
+  background-color: gray;
+}
+.content {
+  width: 75vw;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+#more1, #more2, #more3 {
+  display: none;
 }
