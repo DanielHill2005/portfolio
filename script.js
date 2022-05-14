@@ -45,7 +45,8 @@ function moreLess (n) {
       } else {
         dots1.style.display = "none";
         btnText1.innerHTML = "Read less";
-        moreText1.style.display = "flex";
+        moreText1.style.display = "inline";
+        moreText1.style.fontFamily = "konexy";
       }
       break;
     case 2:
@@ -60,6 +61,7 @@ function moreLess (n) {
         dots2.style.display = "none";
         btnText2.innerHTML = "Read less";
         moreText2.style.display = "inline";
+        moreText2.style.fontFamily = "konexy";
       }
       break;
     case 3:
@@ -74,6 +76,7 @@ function moreLess (n) {
         dots3.style.display = "none";
         btnText3.innerHTML = "Read less";
         moreText3.style.display = "inline";
+        moreText3.style.fontFamily = "konexy";
       }
       break;
   }
