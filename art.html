@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="navbar">
-        <a href="index.html">Home</a>
+      <a href="home.html">Home</a>
         <a href="aboutme.html">About Me</a>
         <a href="resume.html">Resume</a>
         <div class="dropdown">
@@ -24,20 +23,66 @@
         <a href="contact.html">Contact</a>
       </div>
     <video src="background.mp4" id="bg" muted loop autoplay></video>
-    <h2>Title 1</h2>
-    <img>
-    <p>Example 1</p>
-    <h2>Title 2</h2>
-    <img>
-    <p>Example 2</p>
-    <h2>Title 3</h2>
-    <img>
-    <p>Example 3</p>
+    <h2>Dungeons and Dragons Minis</h2>
+    <section class="carousel">
+      <section class="slide">
+          <img src="img/dragon.jpeg" style="width:100%">
+          <div class="carrotsellText">Dragon</div>
+      </section>
+      <section class="slide">
+          <img src="img/dragonface.jpeg" style="width:100%">
+          <div class="carrotsellText">Dragon's face</div>
+      </section>
+      <section class="slide">
+          <img src="img/dragonbooty.jpeg" style="width:100%">
+          <div class="carrotsellText">Dragon booty</div>
+      </section>
+      <section class="slide">
+        <img src="img/beholder.jpeg" style="width:100%">
+        <div class="carrotsellText">Beholder</div>
+      </section>
+      <section class="slide">
+        <img src="img/stone.jpeg" style="width:100%">
+        <div class="carrotsellText">Stone giant</div>
+      </section>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </section>
+  <section style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+  </section>
+    <h2>Warhammer Models</h2>
+    <section class="carousel2">
+      <section class="slide2">
+          <img src="img/warriors.jpeg" style="width:100%">
+          <div class="carrotsellText2">Necron Warriors</div>
+      </section>
+      <section class="slide2">
+          <img src="img/immortals.jpeg" style="width:100%">
+          <div class="carrotsellText2">Necron Immortals</div>
+      </section>
+      <section class="slide2">
+          <img src="img/scarabs.jpeg" style="width:100%">
+          <div class="carrotsellText2">Necron Canoptek Scarabs</div>
+      </section>
+      <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+      <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+  </section>
+  <section style="text-align:center">
+      <span class="dot2" onclick="currentSlide2(1)"></span>
+      <span class="dot2" onclick="currentSlide2(2)"></span>
+      <span class="dot2" onclick="currentSlide2(3)"></span>
+  </section>
+    <script src="script.js"></script>
   </body>
   <footer>
       <section class="card">
           <p>Site Map</p>
-          <a href="index.html">Home</a>
+          <a href="home.html">Home</a>
           <a href="aboutme.html">About Me</a>
           <a href="resume.html">Resume</a>
           <a href="portfoliointro.html">Portfolio</a>
