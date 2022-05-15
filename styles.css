@@ -154,6 +154,7 @@ video {
     padding: 10px;
     font-size: 30px;
     letter-spacing: 2px;
+    text-align: center;
   }
   .summaryBox {
     display: flex;
@@ -218,11 +219,13 @@ video {
   padding-top: 35vh;
   font-size: 100px;
   font-family: space;
+  text-align: center;
 }
 .title {
   padding: 100px;
   font-size: 100px;
   font-family: space;
+  text-align: center;
 }
 .jsButton {
   min-width: 5vw;
@@ -244,4 +247,32 @@ video {
 }
 #more1, #more2, #more3 {
   display: none;
+}
+@media (max-width: 680px) {
+  .mainTitle {
+    font-size: 70px;
+  }
+  .title {
+    font-size: 70px;
+  }
+  .navbar a {
+    padding: 14px 8px;
+  }
+  .dropbtn {
+    padding: 14px 8px;
+  }
+  .cardRow {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    height: 40vh;
+    text-align: center;
+  }
+  body {
+    padding-bottom: 40vh;
+  }
+  .index {
+    overflow-y: hidden;
+  }
 }
