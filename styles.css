@@ -271,6 +271,7 @@ video {
   font-size: 100px;
   font-family: space;
   text-align: center;
+  overflow-x: visible;
 }
 .title {
   padding: 100px;
@@ -336,5 +337,19 @@ video {
   }
   .index {
     overflow-y: hidden;
+  }
+}
+@media (max-width: 400px) {
+  .mainTitle {
+    font-size: 55px;
+  }
+  .title {
+    font-size: 55px;
+  }
+  .navbar a {
+    padding: 14px 4px;
+  }
+  .dropbtn {
+    padding: 14px 4px;
   }
 }
