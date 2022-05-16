@@ -109,15 +109,14 @@ video {
   }
   footer {
     width: 100vw;
-    height: 20vh;    
+    height: 25vh;    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: black;
     justify-content: space-around;
     padding-top: 10px;
     position: absolute;
     bottom: 0;
-    
   }
   footer a {
     color: slategray;
@@ -165,7 +164,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20vh;
+    padding-bottom: 25vh;
   }
 .carousel {
   max-width: 1000px;
@@ -300,6 +299,14 @@ video {
 #more1, #more2, #more3 {
   display: none;
 }
+.footerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.thanks {
+  align-self: center;
+}
 @media (max-width: 680px) {
   .mainTitle {
     font-size: 70px;
@@ -318,11 +325,14 @@ video {
   }
   footer {
     flex-direction: column;
-    height: 40vh;
+    height: 50vh;
     text-align: center;
   }
+  .footerFlex {
+    flex-direction: column;
+  }
   body {
-    padding-bottom: 40vh;
+    padding-bottom: 50vh;
   }
   .index {
     overflow-y: hidden;
