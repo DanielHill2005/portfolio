@@ -21,8 +21,8 @@ function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slide");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideIndex = 1};
+  if (n < 1) {slideIndex = slides.length};
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -44,8 +44,8 @@ function showSlides2(n) {
   let i;
   let slides = document.getElementsByClassName("slide2");
   let dots = document.getElementsByClassName("dot2");
-  if (n > slides.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = slides.length}
+  if (n > slides.length) {slideIndex2 = 1};
+  if (n < 1) {slideIndex2 = slides.length};
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
