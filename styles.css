@@ -109,7 +109,7 @@ video {
   }
   footer {
     width: 100vw;
-    height: 25vh;    
+    height: 250px;    
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -127,7 +127,6 @@ video {
   .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .btn {
     padding: 20px;
@@ -164,7 +163,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 25vh;
+    padding-bottom: 250px;
   }
 .carousel {
   max-width: 1000px;
@@ -326,14 +325,14 @@ video {
   }
   footer {
     flex-direction: column;
-    height: 50vh;
+    height: 500px;
     text-align: center;
   }
   .footerFlex {
     flex-direction: column;
   }
   body {
-    padding-bottom: 50vh;
+    padding-bottom: 500px;
   }
   .index {
     overflow-y: hidden;
